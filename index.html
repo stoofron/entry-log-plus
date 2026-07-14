@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entry Log+ | Private Health Journal</title>
+    <meta
+        name="description"
+        content="Entry Log+ is a simple, private health journal for iPhone."
+    >
+    <style>
+        :root {
+            color-scheme: light dark;
+            --green: #315c44;
+            --sage: #8ea98f;
+            --paper: #f7f3e8;
+            --ink: #223028;
+            --muted: #647069;
+            --card: rgba(255, 255, 255, 0.72);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background:
+                linear-gradient(145deg, #e7f0df, var(--paper));
+            color: var(--ink);
+            line-height: 1.6;
+        }
+
+        main {
+            width: min(760px, calc(100% - 32px));
+            margin: 0 auto;
+            padding: 72px 0;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 42px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(2.6rem, 8vw, 4.6rem);
+            line-height: 1;
+            color: var(--green);
+        }
+
+        .subtitle {
+            margin-top: 14px;
+            font-size: 1.25rem;
+            color: var(--muted);
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid rgba(49, 92, 68, 0.14);
+            border-radius: 22px;
+            padding: 28px;
+            margin: 20px 0;
+            box-shadow: 0 18px 50px rgba(49, 92, 68, 0.10);
+            backdrop-filter: blur(12px);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: var(--green);
+        }
+
+        ul {
+            padding-left: 22px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 32px;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 999px;
+            background: var(--green);
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer {
+            margin-top: 42px;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --paper: #142019;
+                --ink: #edf3ed;
+                --muted: #b6c2b9;
+                --card: rgba(35, 55, 43, 0.78);
+            }
+
+            body {
+                background:
+                    linear-gradient(145deg, #1c2d23, #101712);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="hero">
+            <h1>Entry Log+</h1>
+            <p class="subtitle">Private Health Journal</p>
+        </section>
+
+        <section class="card">
+            <h2>Simple health journaling</h2>
+            <p>
+                Entry Log+ makes it easy to record health events,
+                symptoms, blood pressure, severity, duration, and notes.
+            </p>
+
+            <ul>
+                <li>No accounts</li>
+                <li>No ads</li>
+                <li>No analytics</li>
+                <li>No cloud storage</li>
+                <li>Your information stays on your device</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Support</h2>
+            <p>
+                For support, questions, or feature requests, email:
+            </p>
+
+            <p>
+                <a href="mailto:healthlog.official@gmail.com">
+                    healthlog.official@gmail.com
+                </a>
+            </p>
+        </section>
+
+        <nav>
+            <a class="button" href="privacy.html">Privacy Policy</a>
+            <a class="button" href="mailto:healthlog.official@gmail.com">
+                Contact Support
+            </a>
+        </nav>
+
+        <footer>
+            © 2026 Entry Log+. All rights reserved.
+        </footer>
+    </main>
+</body>
+</html>
